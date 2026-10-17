@@ -45,6 +45,8 @@ btnSubmit.addEventListener("click", (e) => {
     } catch (e) {
         errorMessage.textContent = e.message;
         errorModal.showModal(); // Показываем модалку
+        console.log(e.message);
+        
     } finally {
         console.log("Registration attempt completed");
         

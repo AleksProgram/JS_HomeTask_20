@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>User Registration</h1>
+        <!-- Форма регистрации -->
+        <form id="registration-form">
+            <div class="form-group">
+                <input type="text" id="name-input" placeholder="Name" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <input type="number" id="age-input" placeholder="Age" autocomplete="off">
+            </div>
+            <button type="submit" id="register-btn">Register</button>
+        </form>
+
+         
+
+        <!-- Список пользователей -->
+        <section class="users-section">
+            <h2>Registered Users</h2>
+            <div id="users-list"></div>
+        </section>
+    <h3 id = "count-users">Number of users: 0</h3>
+    </div>
+
+       <!-- Модальное окно для ошибок -->
+        <dialog id="errorModal">
+            <h3>⚠️ Ошибка</h3>
+            <p id="errorMessage"></p>
+            <button id="closeModalBtn" type="button">Закрыть</button>
+        </dialog>
+
+    <script src="js/user.js" defer></script>
+    <script src="js/userManager.js" defer></script>
+    <script src="js/app.js" defer></script> 
+    <!-- соблюдаем порядок подключения файлов. Самый главный файл всегда внизу -->
+</body>
+</html>
